@@ -16,16 +16,16 @@
 **界面安装**：侧栏 **插件** → **添加插件** 右侧小箭头 → **安装第三方插件**，填入下面的地址，安装后点 **立即启用** 并重启应用。
 
 ```
-git+https://github.com/NaianCN/dsh-claude-ui.git
+https://github.com/NaianCN/dsh-claude-ui/archive/refs/heads/main.tar.gz
 ```
 
 **命令行安装**（macOS 桌面版）：
 
 ```bash
-"/Applications/DeepSeek Harness.app/Contents/Resources/runtime/cli/bin/dsh" plugin --profile desktop add git+https://github.com/NaianCN/dsh-claude-ui.git
+"/Applications/DeepSeek Harness.app/Contents/Resources/runtime/cli/bin/dsh" plugin --profile desktop add https://github.com/NaianCN/dsh-claude-ui/archive/refs/heads/main.tar.gz
 ```
 
-用 npm 装的 `dsh web`，把前面的路径换成 `dsh`、profile 换成 `web`。
+Windows 或用 npm 装的 `dsh web`，把前面的路径换成对应的 `dsh` 命令即可（`dsh web` 的 profile 是 `web`）。这个地址是 GitHub 的源码压缩包，安装时不需要电脑上有 Git。
 
 想要侧栏插件市场，再装一个 dshmarket（1.73 及以上），重启后多刷新一次页面（⌘R）即可：
 
@@ -35,7 +35,7 @@ git+https://github.com/NaianCN/dsh-claude-ui.git
 
 ## 更新与卸载
 
-Git 安装不会自动更新，更新就是先卸载再重装。卸载可在 **插件** 页面操作，或执行：
+通过地址安装不会自动更新，更新就是先卸载再重装。卸载可在 **插件** 页面操作，或执行：
 
 ```bash
 "/Applications/DeepSeek Harness.app/Contents/Resources/runtime/cli/bin/dsh" plugin --profile desktop remove dsh-claude-ui
