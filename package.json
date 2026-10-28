@@ -1,6 +1,6 @@
 {
   "name": "dsh-claude-ui",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Claude Desktop 风格的 DeepSeek Harness Web UI：暖色调主题 + 布局细节，并默认开启 dshmarket 的侧栏插件市场入口",
   "type": "module",
   "main": "lib/index.js",
