@@ -4,9 +4,10 @@
 
 ![新会话欢迎页](docs/screenshots/welcome-light.png)
 
-| 对话（浅色） | 对话（深色） |
-| --- | --- |
-| ![浅色对话](docs/screenshots/chat-light.png) | ![深色对话](docs/screenshots/chat-dark.png) |
+<p>
+  <img src="docs/screenshots/chat-light.png" alt="浅色对话" width="49%">
+  <img src="docs/screenshots/chat-dark.png" alt="深色对话" width="49%">
+</p>
 
 <details>
 <summary>深色欢迎页</summary>
