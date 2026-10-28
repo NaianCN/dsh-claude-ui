@@ -1,0 +1,5 @@
+# dsh-claude-ui bundle patch: `dsh plugin --profile <name> add` appends this
+# package to dsh.profile.bundles, and the profile boot merges this insert.
+- insert:
+    - id: claude-ui
+      name: 'dsh-claude-ui'
