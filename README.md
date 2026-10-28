@@ -2,6 +2,19 @@
 
 把 DeepSeek Harness 的界面换成接近 Claude Desktop 的样子。
 
+![新会话欢迎页](docs/screenshots/welcome-light.png)
+
+| 对话（浅色） | 对话（深色） |
+| --- | --- |
+| ![浅色对话](docs/screenshots/chat-light.png) | ![深色对话](docs/screenshots/chat-dark.png) |
+
+<details>
+<summary>深色欢迎页</summary>
+
+![深色欢迎页](docs/screenshots/welcome-dark.png)
+
+</details>
+
 - **配色**：暖灰底色配陶土橙（`#D97757`），浅色 / 深色跟随系统
 - **布局**：衬线体正文、圆角用户气泡、悬浮输入框、更素净的侧栏
 - **欢迎语**：新会话标题换成按时段变化的问候，如「早安，小明」「周三快乐，小明」，名字取自登录的 DeepSeek 账号；鲸鱼保留
