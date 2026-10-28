@@ -2,19 +2,13 @@
 
 把 DeepSeek Harness 的界面换成接近 Claude Desktop 的样子。
 
-![新会话欢迎页](docs/screenshots/welcome-light.png)
-
-<p>
-  <img src="docs/screenshots/chat-light.png" alt="浅色对话" width="49%">
-  <img src="docs/screenshots/chat-dark.png" alt="深色对话" width="49%">
-</p>
-
-<details>
-<summary>深色欢迎页</summary>
+![浅色欢迎页](docs/screenshots/welcome-light.png)
 
 ![深色欢迎页](docs/screenshots/welcome-dark.png)
 
-</details>
+![浅色对话](docs/screenshots/chat-light.png)
+
+![深色对话](docs/screenshots/chat-dark.png)
 
 - **配色**：暖灰底色配陶土橙（`#D97757`），浅色 / 深色跟随系统
 - **布局**：衬线体正文、橙色行内代码、圆角用户气泡；侧栏去掉 DeepSeek Harness 标志，「新会话」改成普通列表行，工作区标题改成「名称 ▾」的样式
