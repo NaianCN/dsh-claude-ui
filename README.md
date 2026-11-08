@@ -1,24 +1,30 @@
 # dsh-claude-ui
 
+中文 | [English](README-en.md)
+
 把 DeepSeek Harness 的界面换成接近 Claude Desktop 的样子。
 
-![浅色欢迎页](docs/screenshots/welcome-light.png)
+![浅色欢迎页](docs/screenshots/welcome-light-0.4.12.png)
 
-![深色欢迎页](docs/screenshots/welcome-dark.png)
+![深色欢迎页](docs/screenshots/welcome-dark-0.4.12.png)
 
-![浅色对话](docs/screenshots/chat-light-ring.png)
+![浅色对话：上下文圆圈弹窗](docs/screenshots/chat-light-0.4.12.png)
 
-![深色对话](docs/screenshots/chat-dark-ring.png)
+![深色对话：模型菜单里的思考强度滑块](docs/screenshots/chat-dark-0.4.12.png)
 
-- **配色**：暖灰底色配陶土橙（`#D97757`），浅色 / 深色跟随系统
+- **配色**：暖灰底色配陶土橙（`#D97757`），浅色 / 深色跟随系统。深色下的菜单和弹窗比输入框亮一级，说明文字和禁用按钮都调过对比度
 - **布局**：衬线体正文、橙色行内代码、圆角用户气泡；侧栏去掉 DeepSeek Harness 标志，「新会话」改成普通列表行，工作区标题改成「名称 ▾」的样式
-- **输入框**：会话页的输入框只保留一行「+ ｜输入｜发送」，权限模式、模型和上下文圆圈移到输入框下方。原来的轮次、Token 用量、缓存命中统计并进了上下文圆圈：点圆圈，弹窗底部能看到。圆圈颜色跟随 DeepSeek API 的峰谷计费：高峰（北京时间工作日 9–12 点、14–18 点）为红，低谷为绿，弹窗里写着当前时段和下次切换时间（法定节假日实际按低谷计费，这里仍按工作日显示）
+- **输入框**：会话页的输入框只保留一行「+ ｜输入｜发送」，权限模式、模型和上下文圆圈移到输入框下方。原来的轮次、Token 用量、缓存命中统计并进了上下文圆圈：点圆圈，弹窗底部能看到
+- **峰谷计费**：圆圈颜色跟随 DeepSeek API 的峰谷计费，高峰（北京时间工作日 9–12 点、14–18 点）为红，低谷为绿；弹窗里写着当前时段和下次切换时间（法定节假日实际按低谷计费，这里仍按工作日显示）
+- **API 状态**：弹窗里显示 DeepSeek 官方 API 的状态，取自 [status.deepseek.com](https://status.deepseek.com)，每 3 分钟刷新一次。有未解决的故障时，圆圈右上角会出现小黄点；点这一行能打开状态页
+- **思考强度**：模型菜单里的「推理等级」换成一条滑块（Off / Low / High / Max），拖动或按左右键即可切换，不用再点进下一层
 - **欢迎语**：新会话标题换成按时段变化的问候，如「早安，小明」「周三快乐，小明」，名字取自登录的 DeepSeek 账号；鲸鱼保留，输入框右上角还趴着一只像素小鲸鱼：会眨眼、偶尔喷水，你打字时它摆尾巴，发送时跳一下，深夜会睡着（系统开启「减少动态效果」时静止）
 - **插件市场**：同时装了 [dshmarket](https://github.com/dsh-market/dsh-market) 时，自动在侧栏打开「插件市场」入口（你手动关掉过就不再打开）
+- **中英文**：界面文字跟随 DeepSeek Harness 的语言
 
 不改动任何官方文件，卸载后界面恢复原样。
 
-> 适用于 DeepSeek Harness 0.2.1。dsh 仍在预览阶段，升级后部分样式可能失效。
+> 适用于 DeepSeek Harness 0.2.2。dsh 仍在预览阶段，升级后部分样式可能失效。
 
 ## 安装
 
@@ -54,6 +60,7 @@ Windows 或用 npm 装的 `dsh web`，把前面的路径换成对应的 `dsh` �
 
 - **装完界面没变**：要完全退出应用再打开，只关窗口时应用可能还留在菜单栏
 - **问候语没有名字**：没有登录 DeepSeek 账号
+- **API 状态一直是「未知」**：电脑访问不了 status.deepseek.com（状态由本机的 dsh 服务去读取）
 
 ## 字体
 
@@ -86,7 +93,7 @@ const SERIF = `"${CJK_PUNCT_FACE}", "Times New Roman", "Songti SC", ...`;
 
 ## 自定义
 
-所有代码都在 `lib/client.js`，改完重启应用生效，无需构建：
+界面代码都在 `lib/client.js`，`lib/index.js` 只负责转发官方状态页。改完重启应用生效，无需构建：
 
 - 配色：`STATIC_TOKENS` 和 `ALIAS_TOKENS`，每项是 `{ light, dark }`
 - 样式：`CSS`。选择器只依赖 `data-*` 属性和 class 后缀，以适应 dsh 版本间的哈希变化
