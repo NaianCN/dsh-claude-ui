@@ -4,9 +4,9 @@
 
 A DeepSeek Harness plugin that makes its interface look and feel like Claude Desktop.
 
-![Welcome page, light](docs/screenshots/en-welcome-light-0.4.12.png)
+![Welcome page, light](docs/screenshots/en-welcome-light-0.4.13.png)
 
-![Welcome page, dark](docs/screenshots/en-welcome-dark-0.4.12.png)
+![Welcome page, dark](docs/screenshots/en-welcome-dark-0.4.13.png)
 
 ![Chat, light: the context ring panel](docs/screenshots/en-chat-light-0.4.12.png)
 
@@ -18,7 +18,10 @@ A DeepSeek Harness plugin that makes its interface look and feel like Claude Des
 - **Peak / off-peak billing**: the ring follows DeepSeek API billing hours. It is red at peak (weekdays 09:00–12:00 and 14:00–18:00 Beijing time) and green off-peak, and the panel shows the current period and when it changes next. Chinese public holidays are billed off-peak but still show as weekdays here
 - **API status**: the panel shows DeepSeek's official API status from [status.deepseek.com](https://status.deepseek.com), refreshed every 3 minutes. While an incident is open, a small amber dot appears on the ring; click the row to open the status page
 - **Thinking effort**: the model menu's Effort row becomes a slider (Off / Low / High / Max). Drag it or use the arrow keys, with no submenu to drill into
-- **Greeting**: the new-session title becomes a greeting that changes with the time of day, such as "Good morning, Alex" or "Happy Wednesday, Alex", using your DeepSeek account name. The whale stays, and a pixel whale rests on the composer's top edge. It blinks and spouts now and then, wags its tail while you type, hops when you send and falls asleep late at night. It stays still when the system's Reduce Motion setting is on
+- **Greeting**: the new-session title becomes a greeting that changes with the time of day, such as "Good morning, Alex" or "Happy Wednesday, Alex", using your DeepSeek account name
+- **Pixel whale**: a little whale rests on the new-session composer. Idle, it sways its tail, flaps a fin, blinks and spouts now and then. Hover the composer and it blushes and waves; click into it and it watches the text; type and its tail goes fast. When you send, it crouches, leaps and splashes down, and late at night it dozes with z's and bubbles. It stays still when the system's Reduce Motion setting is on
+
+  <img src="docs/screenshots/whale-0.4.13.gif" alt="The whale's moods" width="380">
 - **Plugin market**: if [dshmarket](https://github.com/dsh-market/dsh-market) is also installed, its sidebar entry is switched on once (an explicit off is respected)
 - **Languages**: all added text follows DeepSeek Harness's language (Chinese or English)
 

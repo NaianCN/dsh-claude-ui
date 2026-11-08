@@ -4,9 +4,9 @@
 
 把 DeepSeek Harness 的界面换成接近 Claude Desktop 的样子。
 
-![浅色欢迎页](docs/screenshots/welcome-light-0.4.12.png)
+![浅色欢迎页](docs/screenshots/welcome-light-0.4.13.png)
 
-![深色欢迎页](docs/screenshots/welcome-dark-0.4.12.png)
+![深色欢迎页](docs/screenshots/welcome-dark-0.4.13.png)
 
 ![浅色对话：上下文圆圈弹窗](docs/screenshots/chat-light-0.4.12.png)
 
@@ -18,7 +18,10 @@
 - **峰谷计费**：圆圈颜色跟随 DeepSeek API 的峰谷计费，高峰（北京时间工作日 9–12 点、14–18 点）为红，低谷为绿；弹窗里写着当前时段和下次切换时间（法定节假日实际按低谷计费，这里仍按工作日显示）
 - **API 状态**：弹窗里显示 DeepSeek 官方 API 的状态，取自 [status.deepseek.com](https://status.deepseek.com)，每 3 分钟刷新一次。有未解决的故障时，圆圈右上角会出现小黄点；点这一行能打开状态页
 - **思考强度**：模型菜单里的「推理等级」换成一条滑块（Off / Low / High / Max），拖动或按左右键即可切换，不用再点进下一层
-- **欢迎语**：新会话标题换成按时段变化的问候，如「早安，小明」「周三快乐，小明」，名字取自登录的 DeepSeek 账号；鲸鱼保留，输入框右上角还趴着一只像素小鲸鱼：会眨眼、偶尔喷水，你打字时它摆尾巴，发送时跳一下，深夜会睡着（系统开启「减少动态效果」时静止）
+- **欢迎语**：新会话标题换成按时段变化的问候，如「早安，小明」「周三快乐，小明」，名字取自登录的 DeepSeek 账号
+- **像素小鲸鱼**：趴在新会话输入框右上角，待机时摆尾、拍鳍、眨眼、喷水柱；鼠标移到输入框上会脸红挥鳍，点进输入框会盯着文字，打字时尾巴摆得飞快；发送时蓄力起跳、落下溅起水花；深夜闭眼打呼、吐泡泡（系统开启「减少动态效果」时静止）
+
+  <img src="docs/screenshots/whale-0.4.13.gif" alt="小鲸鱼的各种动作" width="380">
 - **插件市场**：同时装了 [dshmarket](https://github.com/dsh-market/dsh-market) 时，自动在侧栏打开「插件市场」入口（你手动关掉过就不再打开）
 - **中英文**：界面文字跟随 DeepSeek Harness 的语言
 
