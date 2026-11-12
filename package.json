@@ -1,6 +1,6 @@
 {
   "name": "dsh-claude-ui",
-  "version": "0.4.15",
+  "version": "0.4.16",
   "description": "Claude Desktop 风格的 DeepSeek Harness 界面 / A Claude Desktop-style skin for DeepSeek Harness",
   "type": "module",
   "main": "lib/index.js",
