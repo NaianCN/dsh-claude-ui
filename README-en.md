@@ -21,6 +21,8 @@ A DeepSeek Harness plugin that makes its interface look and feel like Claude Des
 - **Greeting**: the new-session title becomes a greeting that changes with the time of day, such as "Good morning, Alex" or "Happy Wednesday, Alex", using your DeepSeek account name
 - **Pixel whale**: a little whale rests on the new-session composer. Idle, it sways its tail, flaps a fin, blinks and spouts now and then. Hover the composer and it blushes and waves; click into it and it watches the text; type and its tail goes fast. When you send, it crouches, leaps and splashes down, and late at night it dozes with z's and bubbles. It stays still when the system's Reduce Motion setting is on
 
+  The official home background whale in newer versions (dots / code lettering) also uses the theme's clay accent, adapting to light and dark mode.
+
   <img src="docs/screenshots/whale-0.4.13.gif" alt="The whale's moods" width="380">
 - **Plugin market**: if [dshmarket](https://github.com/dsh-market/dsh-market) is also installed, its sidebar entry is switched on once (an explicit off is respected)
 - **Languages**: all added text follows DeepSeek Harness's language (Chinese or English)
